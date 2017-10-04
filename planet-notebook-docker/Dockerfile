@@ -73,8 +73,8 @@ RUN ln -s $CONDA_DIR/envs/python2/bin/pip $CONDA_DIR/bin/pip2.7 && \
         planet \
         pygdal==2.1.3.3 \
         geojsonio \
-        scikit-learn \
-        cv2
+        scikit-learn && \
+    pip2.7 install opencv-python 
 
 # Add pip shortcut and install Python3 packages
 RUN pip install --upgrade pip && \
